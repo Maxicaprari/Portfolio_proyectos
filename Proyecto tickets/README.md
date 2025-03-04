@@ -52,20 +52,4 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_
 modelo = RandomForestRegressor(n_estimators=100, random_state=42)
 modelo.fit(X_train, y_train)
 
-# Evaluar el modelo
-predicciones = modelo.predict(X_test)
-mse = mean_squared_error(y_test, predicciones)
-print(f"Error cuadrático medio: {mse:.2f}")
-📦 4. Integrar el Modelo con OCR
-Modifica extraer_monto_con_calculo para que:
-Extraiga el texto con OCR.
-Vectorice el texto y otras características.
-Use el modelo entrenado para predecir el monto.
-📈 5. Evaluar y Mejorar
-Métricas: MSE, MAE, o R^2 si es regresión.
-Aumentar el dataset: Más imágenes y casos especiales (bordes rotos, texto torcido).
-Fine-Tuning: Ajusta hiperparámetros o usa técnicas como ensemble.
-📊 Opcional: Entrenamiento con Deep Learning (CNN + LSTM)
-CNN: Para reconocer regiones específicas como el monto total.
-LSTM: Para procesar secuencias de texto extraídas con OCR.
-Implementación: Usar TensorFlow o PyTorch para crear y entrenar el modelo.
+
