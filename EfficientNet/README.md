@@ -94,3 +94,15 @@ __getitem__:
 Carga la imagen en formato RGB.
 Aplica transformaciones si están definidas.
 Devuelve (imagen, nombre del archivo).
+
+# DATA LOADERS 
+Utiliza la clase ImageDataset (que explicamos antes) para crear dos conjuntos de datos:
+train_data: Para entrenamiento.
+val_data: Para validación.
+Parámetros:
+
+train_paths y val_paths: Listas con rutas de las imágenes de entrenamiento y validación, respectivamente.
+train_labels y val_labels: Listas con las etiquetas correspondientes.
+transform: Transformaciones a aplicar a las imágenes:
+train_transforms: Incluye augmentations (como flips, rotations, etc.) para mejorar la generalización.
+val_transforms: Incluye solo normalización y cambio de tamaño, sin augmentations para mantener la evaluación justa.
