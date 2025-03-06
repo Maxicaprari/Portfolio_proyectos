@@ -10,8 +10,8 @@ Esta función garantiza la reproducibilidad de los resultados fijando las semill
 * batch_size = 64: Cantidad de muestras por lote durante el entrenamiento.
 epochs = 4: Número de veces que el modelo verá el conjunto completo de datos.
 
-*lr (learning rate): Tasa de aprendizaje para el optimizador, controla cuánto se ajustan los pesos en cada paso.
+* lr (learning rate): Tasa de aprendizaje para el optimizador, controla cuánto se ajustan los pesos en cada paso.
 
-*gamma: Parece ser el factor de decaimiento de la tasa de aprendizaje o un parámetro para funciones como learning rate scheduler.
+* gamma: Parece ser el factor de decaimiento de la tasa de aprendizaje o un parámetro para funciones como learning rate scheduler.
 
-*residual_dropout: Probabilidad de dropout en capas residuales para evitar sobreajuste.
+* residual_dropout: Probabilidad de dropout en capas residuales para evitar sobreajuste.
