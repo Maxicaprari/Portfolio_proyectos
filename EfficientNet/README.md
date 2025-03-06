@@ -65,3 +65,32 @@ std = [0.229, 0.224, 0.225]
 
 * T.ToTensor() y T.Normalize(...): Igual que en entrenamiento, para mantener la coherencia.
 
+
+# ImageDataset — Dataset para Entrenamiento y Validación
+Esta clase gestiona imágenes y etiquetas, aplicando transformaciones si se proporcionan.
+
+__init__:
+
+file_list: Lista con rutas de las imágenes.
+labels: Lista con las etiquetas correspondientes (opcional).
+transform: Transformaciones a aplicar (opcional).
+__len__: Retorna el número de imágenes.
+
+__getitem__:
+
+Carga la imagen en formato RGB.
+Aplica transformaciones si están definidas.
+Devuelve (imagen, etiqueta) si hay etiquetas; de lo contrario, solo la imagen.
+
+# TestImageDataset — Dataset para el Conjunto de Prueba
+__init__:
+
+file_list: Lista con rutas de las imágenes.
+transform: Transformaciones a aplicar (opcional).
+__len__: Retorna el número de imágenes.
+
+__getitem__:
+
+Carga la imagen en formato RGB.
+Aplica transformaciones si están definidas.
+Devuelve (imagen, nombre del archivo).
