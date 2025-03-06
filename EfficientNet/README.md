@@ -57,3 +57,11 @@ Normaliza los tensores usando las medias y desviaciones estándar típicas de Im
 
 mean = [0.485, 0.456, 0.406]
 std = [0.229, 0.224, 0.225]
+
+**Transformaciones para la validación**
+* Sin aumentaciones aleatorias: Mantiene las imágenes consistentes para evaluar el rendimiento real.
+
+* T.CenterCrop(224): Recorta el centro de la imagen a 224x224.
+
+* T.ToTensor() y T.Normalize(...): Igual que en entrenamiento, para mantener la coherencia.
+
