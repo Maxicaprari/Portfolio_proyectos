@@ -5,3 +5,4 @@ def twoSum(nums, target):
         if complement in num_map:
             return [num_map[complement], i]
         num_map[num] = i
+    return []
