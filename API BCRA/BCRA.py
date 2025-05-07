@@ -35,3 +35,28 @@ plt.grid(True)
 plt.xticks(rotation=45)
 plt.tight_layout()
 plt.show()
+
+
+
+# QUE HACER CUANDO EL RESULTS LARGA UN DICCIONARIO
+
+url_variables = "https://api.bcra.gob.ar//estadisticascambiarias/v1.0/Cotizaciones"
+response = requests.get(url_variables, verify=False)
+variables = pd.DataFrame(response.json()["results"])
+
+data = response.json()["results"]
+
+# Extraer la fecha y la lista de detalles
+fecha = data["fecha"]
+detalle = data["detalle"]
+
+# Convertir la lista de detalles en DataFrame
+df = pd.DataFrame(detalle)
+
+# Agregar la columna de fecha a cada fila
+df["fecha"] = fecha
+
+# Reordenar columnas si quieres
+df = df[["fecha"] + [col for col in df.columns if col != "fecha"]]
+
+df.head()
