@@ -5,11 +5,11 @@ https://principales-variables.bcra.apidocs.ar/operations/get-estadisticas-moneta
 
 Notas:
 
-*Para INDEC y Datos Abiertos Argentina, puedes buscar el ID de la serie que te interese en https://datos.gob.ar/series.
+*Para INDEC y Datos Abiertos Argentina, buscar el ID de la serie que te interese en https://datos.gob.ar/series.
 
 *Para Trading Economics, necesitas una API key gratuita (regístrate en su web).
 
-*Para BCRA, puedes explorar otros endpoints según lo que necesites.
+*Para BCRA, se pueden explorar otros endpoints.
 
 *Para DólarSi, es una API no oficial pero muy usada para cotizaciones rápidas.
 
