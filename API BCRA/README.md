@@ -3,7 +3,15 @@
 
 https://principales-variables.bcra.apidocs.ar/operations/get-estadisticas-monetarias.html
 
+Notas:
 
+*Para INDEC y Datos Abiertos Argentina, puedes buscar el ID de la serie que te interese en https://datos.gob.ar/series.
+
+*Para Trading Economics, necesitas una API key gratuita (regístrate en su web).
+
+*Para BCRA, puedes explorar otros endpoints según lo que necesites.
+
+*Para DólarSi, es una API no oficial pero muy usada para cotizaciones rápidas.
 
 # 1. BCRA (Banco Central de la República Argentina)
 URL: https://api.bcra.gob.ar/estadisticas/
